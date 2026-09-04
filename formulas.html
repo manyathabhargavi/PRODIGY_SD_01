@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Formulas — Tempora</title>
+<meta name="description" content="All six temperature conversion formulas used by Tempora." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-brand">
+      <span class="mark" aria-hidden="true">🌡</span>
+      <span>TEMPORA<small>Smart Temperature Conversion Suite</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="converter.html">Converter</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="formulas.html">Formulas</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="section" style="padding-top: var(--space-7);">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Reference</span>
+        <h2>Conversion formulas</h2>
+        <p>The exact formulas Tempora applies for every conversion.</p>
+      </div>
+
+      <div class="formula-grid">
+        <article class="formula-card">
+          <h3>Celsius → Fahrenheit</h3>
+          <div class="formula-expr">°F = (°C × 9/5) + 32</div>
+          <p>Multiply the Celsius value by 9/5 and add 32.</p>
+        </article>
+
+        <article class="formula-card">
+          <h3>Celsius → Kelvin</h3>
+          <div class="formula-expr">K = °C + 273.15</div>
+          <p>Add 273.15 to the Celsius value.</p>
+        </article>
+
+        <article class="formula-card">
+          <h3>Fahrenheit → Celsius</h3>
+          <div class="formula-expr">°C = (°F − 32) × 5/9</div>
+          <p>Subtract 32, then multiply the result by 5/9.</p>
+        </article>
+
+        <article class="formula-card">
+          <h3>Fahrenheit → Kelvin</h3>
+          <div class="formula-expr">K = (°F − 32) × 5/9 + 273.15</div>
+          <p>Convert to Celsius first, then add 273.15.</p>
+        </article>
+
+        <article class="formula-card">
+          <h3>Kelvin → Celsius</h3>
+          <div class="formula-expr">°C = K − 273.15</div>
+          <p>Subtract 273.15 from the Kelvin value.</p>
+        </article>
+
+        <article class="formula-card">
+          <h3>Kelvin → Fahrenheit</h3>
+          <div class="formula-expr">°F = (K − 273.15) × 9/5 + 32</div>
+          <p>Convert to Celsius first, then to Fahrenheit.</p>
+        </article>
+      </div>
+
+      <div class="section-head" style="margin-top: var(--space-8);">
+        <span class="eyebrow">Units</span>
+        <h2>About the three units</h2>
+      </div>
+
+      <div class="unit-explainers">
+        <div class="card">
+          <h3>Celsius (°C)</h3>
+          <p>Based on water's freezing point at 0° and boiling point at 100° under standard atmospheric pressure. The everyday scale in most of the world.</p>
+        </div>
+        <div class="card">
+          <h3>Fahrenheit (°F)</h3>
+          <p>Water freezes at 32° and boils at 212°. Commonly used for weather and everyday temperature reporting in the United States.</p>
+        </div>
+        <div class="card">
+          <h3>Kelvin (K)</h3>
+          <p>The SI base unit for temperature, starting at absolute zero (0 K), the point where no lower temperature is possible. Used throughout science.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Tempora | Software Development Internship Project</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="converter.html">Converter</a>
+      <a href="history.html">History</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

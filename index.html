@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tempora — Smart Temperature Conversion Suite</title>
+<meta name="description" content="Tempora converts temperatures instantly between Celsius, Fahrenheit and Kelvin with a clean, reliable interface." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-brand">
+      <span class="mark" aria-hidden="true">🌡</span>
+      <span>TEMPORA<small>Smart Temperature Conversion Suite</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="converter.html">Converter</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="formulas.html">Formulas</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Celsius · Fahrenheit · Kelvin</span>
+        <h1>Smart Temperature Conversion</h1>
+        <p>Convert temperatures quickly and accurately between Celsius, Fahrenheit and Kelvin. Enter one value, pick its unit, and Tempora reads out the other two instantly.</p>
+        <div class="hero-actions">
+          <a href="converter.html" class="btn btn-primary">Start Converting</a>
+          <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+
+      <div class="gauge-wrap">
+        <div class="gauge" aria-hidden="true">
+          <div class="gauge-track">
+            <div class="gauge-marker">°</div>
+          </div>
+          <div class="gauge-labels">
+            <span>°C</span>
+            <span>°F</span>
+            <span>K</span>
+          </div>
+          <p class="gauge-caption">live readout</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Why Tempora</span>
+        <h2>Built for accuracy, not guesswork</h2>
+        <p>Every conversion runs on the exact standard formulas, with validation that keeps results trustworthy.</p>
+      </div>
+
+      <div class="grid-4">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">⚡</div>
+          <h3>Instant Conversion</h3>
+          <p>Results appear the moment you convert — no page reloads, no waiting.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🎯</div>
+          <h3>Accurate Results</h3>
+          <p>Standard conversion formulas applied consistently, rounded to two decimal places.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🗂</div>
+          <h3>Conversion History</h3>
+          <p>Every successful conversion is saved locally so you can revisit past values.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">📱</div>
+          <h3>Responsive Design</h3>
+          <p>A layout that adapts cleanly from a desktop monitor down to a phone screen.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Process</span>
+        <h2>How it works</h2>
+        <p>Four steps, always in this order.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-index">1</div>
+          <h4>Enter temperature</h4>
+          <p>Type a numeric value into the converter field.</p>
+        </div>
+        <div class="step">
+          <div class="step-index">2</div>
+          <h4>Select original unit</h4>
+          <p>Choose whether that value is Celsius, Fahrenheit, or Kelvin.</p>
+        </div>
+        <div class="step">
+          <div class="step-index">3</div>
+          <h4>Convert</h4>
+          <p>Tempora applies the correct formulas behind the scenes.</p>
+        </div>
+        <div class="step">
+          <div class="step-index">4</div>
+          <h4>View results</h4>
+          <p>See the other two units instantly, saved to your history.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Tempora | Software Development Internship Project</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="converter.html">Converter</a>
+      <a href="history.html">History</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
